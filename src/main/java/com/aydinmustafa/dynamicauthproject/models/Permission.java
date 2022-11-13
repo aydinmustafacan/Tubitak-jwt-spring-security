@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "permission_id", nullable = false, insertable = true, updatable = true)
+    @Column(name = "permission_id", insertable = true, updatable = true)
     private Long permissionId;
 
     public Long getPermissionId() {
